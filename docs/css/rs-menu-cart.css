@@ -1,0 +1,44 @@
+
+/* rs-menu-cart - navbar */
+.rs-menu-cart .navbar-brand img {width: 104px;}
+.rs-menu-cart .nav-item {
+	padding: 0 10px;
+}
+@media screen and (max-width: 991px) {
+	.rs-menu-cart .nav-item {
+		padding: 10px;
+	}
+}
+.rs-menu-cart .navbar-expand-lg .d-flex {
+	margin: 0;
+}
+.rs-menu-cart .navbar-expand-lg .navbar-nav .nav-link,
+.rs-menu-cart .navbar-expand-lg .navbar-nav .nav-link:focus,
+.rs-menu-cart .navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: #fff;
+	font-size: 15px;
+	padding: 0 5px;
+	white-space: nowrap;
+	border-bottom: 1px solid #060607;
+}
+.rs-menu-cart .navbar-expand-lg .navbar-nav .nav-link.active,
+.rs-menu-cart .navbar-expand-lg .navbar-nav .nav-link:hover {
+	border-bottom: 1px solid #ff6f0f;
+}
+
+/* rs-menu-cart - mobile menu button in navbar */
+.rs-menu-cart .navbar-toggler-icon i {
+	color: #9b9d9e;
+	font-size: 30px;
+}
+.rs-menu-cart .navbar-toggler {
+    border: 1px solid #9b9d9e;
+}
+
+.rs-menu-cart .fa-search {
+    transform: rotate(90deg);
+    margin: 0 0 0 4px;
+}
+.rs-menu-cart .fa-user-o {
+	margin: 0 0 0 4px;
+}

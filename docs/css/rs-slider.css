@@ -1,0 +1,130 @@
+
+/* rs-slider - text content */
+.rs-slider .carousel-caption {
+	left: 48%;
+	bottom: 7.25rem;
+}
+.rs-slider .carousel-caption p:nth-child(1) {
+	font-size: 9px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.rs-slider .carousel-caption h1:nth-child(2) {
+	font-size: 29px;
+	font-weight: 500;
+}
+.rs-slider .carousel-caption p:nth-child(3) {
+	font-size: 12px;
+	font-weight: 400;
+}
+.rs-slider .btn {
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	margin: 0 18px 8px 0;
+	border-radius: 0;
+	width: 154px;
+}
+.rs-slider .btn-orange {
+	border: 1px solid #ff6f0f;
+}
+.rs-slider .btn-orange:active,
+.rs-slider .btn-orange:focus {
+	box-shadow: 0 0 6px #ff6f0f;
+}
+.rs-slider .btn-gray {
+	border: 1px solid #6e6e6e;
+}
+.rs-slider .btn-gray:active,
+.rs-slider .btn-gray:focus {
+	box-shadow: 0 0 6px #fff;
+}
+@media screen and (max-width: 1200px) {
+	.rs-slider .carousel-caption > :not(:last-child) {
+		display: none;
+	}
+}
+@media screen and (max-width: 992px) {
+	.rs-slider .carousel-caption {
+		bottom: 3rem;
+	}
+}
+@media screen and (max-width: 576px) {
+	.rs-slider .carousel-caption {
+		display: none;
+	}
+}
+
+
+/* rs-slider - items */
+.carousel-item img {
+	width: 100%;
+}
+
+
+/* rs-slider - control arrows */
+.rs-slider .carousel-control-next,
+.rs-slider .carousel-control-prev {
+	width: 35px;
+}
+.rs-slider .carousel-control-next-icon,
+.rs-slider .carousel-control-prev-icon {
+    display: flex;
+    justify-content: center;
+    padding: 3px 0;
+    position: relative;
+    width: 100%;
+	background: none;
+	height: 22px;
+}
+.rs-slider .carousel-control-prev-icon {
+	transform: rotate(180deg);
+}
+.rs-slider .carousel-control-next-icon svg,
+.rs-slider .carousel-control-prev-icon svg {
+    display: block;
+    width: 35px;
+    transition: .3s;
+    will-change: transform;
+}
+.rs-slider .carousel-control-next-icon:hover svg,
+.rs-slider .carousel-control-prev-icon:hover svg {
+	transform: translateX(5px);
+}
+.rs-slider .carousel-control-next-icon svg polyline,
+.rs-slider .carousel-control-prev-icon svg polyline {
+	stroke: #ffffff;
+	fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 2;
+}
+
+
+/* rs-slider - control btns */
+.rs-slider .carousel-indicators {
+	 counter-reset: list;
+}
+.rs-slider .carousel-indicators button {
+	position: relative;
+	text-indent: initial;
+	margin: 0 32px 0 12px;
+	height: 1px;
+	width: 0;
+}
+.rs-slider .carousel-indicators button.active {
+	background-color: #ffffff;
+	width: 40px;
+}
+.rs-slider .carousel-indicators button:after {
+	counter-increment: list;
+    content: '0' counter(list);
+    position: absolute;
+	bottom: -7px;
+    right: -26px;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: #ffffff;
+    width: 14px;
+}
